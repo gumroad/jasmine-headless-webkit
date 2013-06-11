@@ -18,7 +18,7 @@ using namespace std;
 class Runner: public QObject {
   Q_OBJECT
   public:
-    enum { TIMER_TICK = 200, MAX_LOOPS = 50 };
+    enum { TIMER_TICK = 200, MAX_LOOPS = 200 };
 
     Runner();
     void setColors(bool colors);
