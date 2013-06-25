@@ -199,10 +199,5 @@ void Runner::timerEvent() {
       QApplication::instance()->exit(exitCode);
     }
   }
-
-  if (runs > MAX_LOOPS) {
-    std::cerr << "WARNING: too many runs and the test is still not finished!" << std::endl;
-    QApplication::instance()->exit(1);
-  }
 }
 
